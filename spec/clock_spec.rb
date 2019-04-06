@@ -52,7 +52,6 @@ describe Clock do
     end
   end
 
-
   describe '5:00 example' do
     before(:each) do
       @clock = Clock.new('5:00 PM')
@@ -62,7 +61,6 @@ describe Clock do
       expect(@clock.angle).to eq(150)
     end
   end
-
 
   describe '2:20 example' do
     before(:each) do
@@ -74,7 +72,6 @@ describe Clock do
     end
   end
 
-
   describe '12:00 example' do
     before(:each) do
       @clock = Clock.new('12:00 PM')
@@ -84,7 +81,6 @@ describe Clock do
       expect(@clock.angle).to eq(0)
     end
   end
-
 
   describe '12:15 example' do
     before(:each) do
