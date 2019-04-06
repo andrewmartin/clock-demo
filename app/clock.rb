@@ -25,4 +25,23 @@ class Clock
     self.time[1]
   end
 
+  # calculate the hour angle
+  # 30 degrees per hour = 0.5 degrees / minute
+  # 0.5 degrees per minute * total minutes
+  def hour_angle
+    0.5 * (self.hour * 60 + self.min)
+  end
+
+  # calculate the minute angle
+  # the minute moves at a pace of 6 degrees a minute
+  def min_angle
+    6 * self.min
+  end
+
+  # calculate the angle
+  def angle
+    angle = (self.hour_angle - self.min_angle).abs
+    [(360 - angle), angle].min
+  end
+
 end
