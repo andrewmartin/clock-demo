@@ -112,4 +112,14 @@ describe Clock do
     end
   end
 
+  describe '9:00 example' do
+    before(:each) do
+      @clock = Clock.new('9:00 AM')
+    end
+
+    it "gets the proper angle" do
+      expect(@clock.angle).to eq(90)
+    end
+  end
+
 end
