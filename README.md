@@ -4,6 +4,11 @@ Write a class that takes a string in the format, "12:34 PM", and returns an inte
 
 ## Quickstart
 
-1. `bundle`
-2. `bundle exec guard`
-3. `touch app/clock.rb` (in a new terminal)
+1. `bundle exec guard`
+2. `touch app/clock.rb` (in a new terminal) to run tests
+
+Or:
+
+1. `bundle exec rspec`
+
+See `spec/clock_spec.rb` for test examples.
